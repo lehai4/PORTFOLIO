@@ -445,14 +445,13 @@ img {
 .skills__container {
   row-gap: 0;
 }
-
-.skills__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
+.skills__list {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  row-gap: 20px;
 }
-
+.text-center {
+  text-align: center;
+}
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
   display: flex;
@@ -1063,9 +1062,13 @@ img {
   .services__modal-content {
     width: 450px;
   }
+  .portfolio__img:first-child {
+    height: 213px;
+  }
   .portfolio__img {
     width: 320px;
   }
+
   .portfolio__content {
     align-items: center;
   }
