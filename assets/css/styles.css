@@ -367,7 +367,7 @@ img {
 }
 
 .button__icon {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   margin-left: var(--mb-0-5);
   transition: 0.3s;
 }
@@ -638,7 +638,14 @@ img {
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
 }
-
+.portfolio__flex {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+.portfolio__flex a {
+  flex: auto;
+}
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
