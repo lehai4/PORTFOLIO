@@ -190,3 +190,29 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2000,
+  delay: 200,
+  //     reset: true
+});
+
+sr.reveal(".home__container, .about,", {});
+sr.reveal(
+  ".home__img, .about__img, .portfolio, .project, .contact, .contact__container",
+  {
+    delay: 200,
+  }
+);
+sr.reveal(".skills, .skills__list", { origin: "left", delay: 200 });
+sr.reveal(".qualification, .qualification__container", {
+  origin: "right",
+  delay: 200,
+});
+sr.reveal(
+  ".home__social-icon,  .contact__infomation, .contact__inputs, .contact__content",
+  { interval: 200 }
+);
