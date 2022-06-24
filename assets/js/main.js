@@ -49,7 +49,6 @@ let tabContents = $$("[data-content]");
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     let target = $(tab.dataset.target);
-    console.log(target);
     tabContents.forEach((tabContent) => {
       tabContent.classList.remove("qualification__active");
     });
