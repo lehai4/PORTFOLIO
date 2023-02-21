@@ -446,7 +446,7 @@ img {
   row-gap: 0;
 }
 .skills__list {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   row-gap: 20px;
 }
 .text-center {
