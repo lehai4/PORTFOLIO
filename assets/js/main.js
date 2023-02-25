@@ -60,28 +60,7 @@ tabs.forEach((tab) => {
     tab.classList.add("qualification__active");
   });
 });
-/*==================== SERVICES MODAL ====================*/
-let modalViews = $$(".services__modal");
-let modalBtns = $$(".services__button");
-let modalCloses = $$(".services__modal-close");
 
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add("active-modal");
-};
-
-modalBtns.forEach((modalBtn, index) => {
-  modalBtn.addEventListener("click", () => {
-    modal(index);
-  });
-});
-
-modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener("click", () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove("active-modal");
-    });
-  });
-});
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio__container", {
   cssMode: true,
